@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Activity Options</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link href="ks.css" rel="stylesheet" />
+        <link href="clockpicker.css" rel="stylesheet" />
+        <link href="standalone.css" rel="stylesheet" />
+
+        <script defer src="jquery-3.5.1.slim.js"></script>
+        <script defer src="clockpicker.js"></script>
+        <script defer src="temp.js"></script>
+        <script defer src = "tabs.js"></script>
+        <script defer src="functions.js"></script>
+        <script defer src="options.js"></script>
+    </head>
+    <body>
+        <br>
+        <div class = "container">
+            <span id = 'alert'></span>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <h6>The Blacklisted Domain goes here!!!</h6>
+                <div class="margin-top-10 col-6" id = 'blr'>
+                    <ul id='textArea' class="listbox" size="15"></ul>
+                </div>
+                <div class = "col-6">
+                    <input type = "submit" class="btn btn-outline-danger" id = "resetBL" value = "Clear Blacklist">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class = container>
+                <div class="row">
+                    <div class="col-auto">
+                        <input type="text" id="blacklist" placeholder="Enter Site to be blacklisted !!!" style="width:38%;">
+                       
+                        <input id="time" value="" placeholder="Enter Time (hh:mm)" data-default="20:48" style="width:25%;">
+                        <button type="button" id="sub" style="border: none; font-size: 21px; background-color: #FFFFFF; padding: 0px;">⏲️</button>
+                        <button type="button" class="btn btn-primary btn-sm mb-1" id="submit">Submit</button>
+
+                    </div>
+                </div>
+                <br>
+               
+                <div class="row">
+                    <div class="col-auto">
+                       
+                        <input id="resetTime" value="" placeholder="Daily Reset Time (hh:mm)" data-default="20:48" style="width:50%;">
+                        <button type="button" id="sub1" style="border: none; font-size: 21px; background-color: #FFFFFF; padding: 0px;">🕘</button>
+                        <button type="button" class="btn btn-primary btn-sm mb-1" id="submitTime">Submit Time</button>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-warning" id = "reset">Reset Today's Data</button>
+                </div>
+                <br>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-danger" id = "resetAll">Reset All Data</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html style="height: 400px; width: 580px;">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Web Activity Time Tracker</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script defer src = "popup.js"></script>
+        <script defer src = "Chart.js"></script>
+        <script defer src = "functions.js"></script>
+        <script defer src = "graph.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="ks.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+    </head>
+
+    <body id="Recbody">
+        
+        <div id="extensionTitle">
+            <p class="title"><img src = "icon128.png" height="30" width="30"></img>&nbsp;Web Activity Time Tracker&emsp;&emsp;&emsp;&emsp;<button class="btn btn-outline-secondary" id="options">Options</button></p>
+        </div>
+        <div id="buttons" class="btn-block">
+            <a class="active" id="btnToday">Today's Usage</a>
+            <a id="btnAllTime">All Time</a>
+        </div>
+        <div id = "display">
+            <div class = "container">
+                <canvas id="ctx" style="height:100px; align-items:centre"></canvas>
+                <hr>
+            </div>
+            <div class = 'container' id = 'activetab'>
+                
+            </div>
+        
+            <div class = 'container' id = 'displayArea'>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
