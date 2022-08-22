@@ -1,4 +1,4 @@
-![alt text](https://github.com/kaustubhshukla30/webActivity/blob/main/icon16.png)
+![alt text](https://github.com/vinaysingh20/webActivity/blob/main/icon16.png)
 # Web Activity Tracker 
 
 This a chrome extension that monitors and summerizes the user's web activity. The purpose of this extension is to self analyze one's web usage and increase productivity by greylisting/blacklisting the websites that user finds unproductive.
